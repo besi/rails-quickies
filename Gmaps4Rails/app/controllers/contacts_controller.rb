@@ -1,9 +1,14 @@
 class ContactsController < ApplicationController
+  
+  def map
+     @json = Contact.all.to_gmaps4rails
+  end
+                                    
   # GET /contacts
   # GET /contacts.xml
   def index
     @contacts = Contact.all
-
+     @json = Contact.all.to_gmaps4rails      
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @contacts }
