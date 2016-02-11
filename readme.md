@@ -1,13 +1,27 @@
-Introduction
+[Rails-quickies][]
 ------------
 
 Here you find a collection of neat little rails projects. Each of the submodules has a readme with detailed instructions how to create the project.
 
 Feedback is very welcome.                           
 
-Quickies
---------
+[Rails-quickies]: https://github.com/besi/rails-quickies
 
-1. [Gmaps4Rails](https://github.com/besi/rails-quickies/tree/master/Gmaps4Rails) - Display a set of contacts on a map
 
-2. [ImageAdmin](https://github.com/besi/rails-quickies/tree/master/ImageAdmin) - Upload and manage images for a list of products using [ActiveAdmin](http://activeadmin.info)
+## [ImageAdmin][]
+
+Upload and manage multiple images per product-entity using [ActiveAdmin](http://activeadmin.info)
+
+![screenshot](ImageAdmin/screenshot.png)
+
+[ImageAdmin]: ImageAdmin
+
+
+
+## [Gmaps4Rails][]
+
+Display a set of contacts on a map
+
+![screenshot](Gmaps4Rails/screenshot.png)
+
+[Gmaps4Rails]: Gmaps4Rails
