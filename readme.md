@@ -9,3 +9,5 @@ Quickies
 --------
 
 1. [Gmaps4Rails](https://github.com/besi/rails-quickies/tree/master/Gmaps4Rails) - Display a set of contacts on a map
+
+2. [ImageAdmin](https://github.com/besi/rails-quickies/tree/master/ImageAdmin) - Upload and manage images for a list of products using [ActiveAdmin](http://activeadmin.info)
