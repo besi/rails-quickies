@@ -1,6 +1,6 @@
 ActiveAdmin.register Product do
 
-  permit_params :title, :price, :description, images: []
+  permit_params :title, :price, :description, :images_cache,  images: []
 
   index do
     column do |p|
