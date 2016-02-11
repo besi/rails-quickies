@@ -1,7 +1,11 @@
 class Contact < ActiveRecord::Base
-	acts_as_gmappable 
+  
+  attr_accessible :firstname, :lastname, :address, :zip, :city, :country
 
-	def gmaps4rails_address
-		"#{self.address}, #{self.zip} #{self.city}, #{self.country}"
-	end
+    acts_as_gmappable 
+
+    def gmaps4rails_address
+        "#{self.address}, #{self.zip} #{self.city}, #{self.country}"
+    end
+
 end

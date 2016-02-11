@@ -1,5 +1,5 @@
 class CreateContacts < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :contacts do |t|
       t.string :firstname
       t.string :lastname
@@ -10,9 +10,5 @@ class CreateContacts < ActiveRecord::Migration
 
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :contacts
   end
 end

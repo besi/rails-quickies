@@ -40,6 +40,9 @@ Migrate the contact model to have the required parameters
 Change the model `contact.rb` to this:
 
 	class Contact < ActiveRecord::Base
+
+        attr_accessible :firstname, :lastname, :address, :zip, :city, :country
+
 		acts_as_gmappable 
 
 		def gmaps4rails_address
