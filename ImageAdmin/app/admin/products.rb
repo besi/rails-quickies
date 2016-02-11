@@ -1,10 +1,13 @@
 ActiveAdmin.register Product do
 
-  permit_params :title, :price, :description, :images_cache,  images: []
+  permit_params :title, :price, :description, :images_cache, images: []
 
   index do
     column do |p|
-      image_tag p.images.first.url(:thumb) rescue nil
+
+      link_to admin_product_path(p) do
+        image_tag p.images.first.url(:thumb) rescue nil
+      end
     end
 
     selectable_column
@@ -44,7 +47,9 @@ ActiveAdmin.register Product do
 
   sidebar 'Images', only: [:show, :edit] do
     resource.images.each do |image|
-      img src: image.url, width: '100%'
+      a href: image.url, target: '_blank' do
+        img src: image.url, width: '100%'
+      end
     end
   end
 
