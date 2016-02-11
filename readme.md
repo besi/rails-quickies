@@ -12,7 +12,7 @@ Feedback is very welcome.
 
 Upload and manage multiple images per product-entity using [ActiveAdmin](http://activeadmin.info)
 
-![screenshot](ImageAdmin/screenshot.png)
+![screenshot](ImageAdmin/Screenshot.png)
 
 [ImageAdmin]: ImageAdmin
 
